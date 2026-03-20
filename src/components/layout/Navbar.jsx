@@ -17,7 +17,7 @@ export default function Navbar() {
             }
             end
           >
-            Home
+            Accueil
           </NavLink>
           <NavLink
             to="/faith"
@@ -25,7 +25,15 @@ export default function Navbar() {
               isActive ? "nav-link nav-link-active" : "nav-link"
             }
           >
-            Faith
+            Foi
+          </NavLink>
+          <NavLink
+            to="/notes"
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
+            Mots doux
           </NavLink>
         </nav>
       </Container>

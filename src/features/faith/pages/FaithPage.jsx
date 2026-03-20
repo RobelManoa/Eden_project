@@ -17,14 +17,15 @@ export default function FaithPage() {
   return (
     <Container>
       <section className="section-header">
-        <p className="eyebrow">Module · Bibliotheque de Foi</p>
-        <h1>Des versets pour l&apos;amour, la paix et la force</h1>
+        <p className="eyebrow">Module · Bibliothèque de Foi</p>
+        <h1>La Parole qui éclaire notre chemin</h1>
         <p className="section-text">
-          Les donnees sont chargees depuis un JSON local, filtrees dans React,
-          puis affichees dans une grille responsive.
+          Une sélection de versets pour nourrir ton âme, trouver la paix dans les 
+          moments de doute et puiser la force nécessaire à chaque nouveau projet.
         </p>
       </section>
 
+      {/* Le reste des composants reste inchangé */}
       <CategoryFilter
         categories={categories}
         selected={selectedCategory}
