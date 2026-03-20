@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "L’amour est patient, l’amour est plein de bonté.",
+    "reference": "1 Corinthiens 13:4",
+    "category": "Amour"
+  },
+  {
+    "id": 2,
+    "text": "Que la paix de Dieu garde vos cœurs.",
+    "reference": "Philippiens 4:7",
+    "category": "Paix"
+  },
+  {
+    "id": 3,
+    "text": "Je puis tout par celui qui me fortifie.",
+    "reference": "Philippiens 4:13",
+    "category": "Force"
+  }
+]
