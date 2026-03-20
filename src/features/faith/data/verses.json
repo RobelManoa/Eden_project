@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "text": "L’amour est patient, l’amour est plein de bonté.",
+    "reference": "1 Corinthiens 13:4",
+    "category": "Amour"
+  },
+  {
+    "id": 2,
+    "text": "Que la paix de Dieu garde vos cœurs.",
+    "reference": "Philippiens 4:7",
+    "category": "Paix"
+  },
+  {
+    "id": 3,
+    "text": "Je puis tout par celui qui me fortifie.",
+    "reference": "Philippiens 4:13",
+    "category": "Force"
+  },
+  {
+    "id": 4,
+    "text": "Deux valent mieux qu'un, parce qu'ils retirent un bon salaire de leur travail.",
+    "reference": "Ecclésiaste 4:9",
+    "category": "Amour"
+  },
+  {
+    "id": 5,
+    "text": "Que tout ce que vous faites se fasse avec amour.",
+    "reference": "1 Corinthiens 16:14",
+    "category": "Amour"
+  },
+  {
+    "id": 6,
+    "text": "Le Seigneur lui-même marchera devant toi, il sera avec toi, il ne te délaissera point, il ne t'abandonnera point ; ne crains point, et ne t'effraie point.",
+    "reference": "Deutéronome 31:8",
+    "category": "Encouragement"
+  },
+  {
+    "id": 7,
+    "text": "Ne t'ai-je pas donné cet ordre : Fortifie-toi et prends courage ? Ne t'effraie point et ne t'épouvante point, car l'Éternel, ton Dieu, est avec toi dans tout ce que tu entreprendras.",
+    "reference": "Josué 1:9",
+    "category": "Force"
+  },
+  {
+    "id": 8,
+    "text": "Par-dessus tout, revêtez-vous de l'amour, qui est le lien de la perfection.",
+    "reference": "Colossiens 3:14",
+    "category": "Amour"
+  },
+  {
+    "id": 9,
+    "text": "Car Dieu ne nous a pas donné un esprit de timidité, mais un esprit de force, d'amour et de sagesse.",
+    "reference": "2 Timothée 1:7",
+    "category": "Force"
+  },
+  {
+    "id": 11,
+    "text": "Rendez grâces en toutes choses, car c'est à votre égard la volonté de Dieu en Jésus Christ.",
+    "reference": "1 Thessaloniciens 5:18",
+    "category": "Gratitude"
+  },
+  {
+    "id": 10,
+    "text": "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie pas sur ta sagesse.",
+    "reference": "Proverbes 3:5",
+    "category": "Paix"
+  },
+  {
+    "id": 12,
+    "text": "L'Éternel est mon berger : je ne manquerai de rien.",
+    "reference": "Psaume 23:1",
+    "category": "Fidélité"
+  },
+  {
+    "id": 13,
+    "text": "Les bontés de l'Éternel ne sont pas épuisées, ses compassions ne sont pas à leur terme ; elles se renouvellent chaque matin.",
+    "reference": "Lamentations 3:22-23",
+    "category": "Bonté"
+  },
+  {
+    "id": 14,
+    "text": "Recommande à l'Éternel tes œuvres, et tes projets réussiront.",
+    "reference": "Proverbes 16:3",
+    "category": "Sagesse"
+  },
+  {
+    "id": 15,
+    "text": "Car je connais les projets que j'ai formés sur vous, dit l'Éternel, projets de paix et non de malheur.",
+    "reference": "Jérémie 29:11",
+    "category": "Espérance"
+  },
+  {
+    "id": 16,
+    "text": "Le Seigneur est bon ; il est un refuge au jour de la détresse ; il connaît ceux qui se confient en lui.",
+    "reference": "Nahum 1:7",
+    "category": "Bonté"
+  },
+  {
+    "id": 17,
+    "text": "Mon âme, bénis l'Éternel, et n'oublie aucun de ses bienfaits !",
+    "reference": "Psaume 103:2",
+    "category": "Gratitude"
+  }
+]

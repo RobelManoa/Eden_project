@@ -1,70 +1,238 @@
-# Getting Started with Create React App
+1. Cahier des Charges Professionnel — Projet EDEN
+# 1.1 Contexte
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Le projet Eden est une application web statique développée dans un cadre à la fois personnel et pédagogique.
+Il vise à simuler un environnement de développement professionnel collaboratif tout en servant de plateforme privée pour un couple.
 
-## Available Scripts
+# 1.2 Objectifs
+## Objectif principal
 
-In the project directory, you can run:
+Créer une application web moderne permettant de centraliser :
 
-### `npm start`
+des contenus textuels (versets bibliques)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+des contenus multimédias (prévu Phase 2)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+des interactions utilisateur (prévu Phase 3)
 
-### `npm test`
+## Objectifs pédagogiques
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mise en place d’un workflow Git collaboratif
 
-### `npm run build`
+Structuration d’une application React scalable
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Optimisation des performances front-end (SPA statique)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Implémentation d’une UI moderne et responsive
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Gestion de données via JSON statique
 
-### `npm run eject`
+## 1.3 Périmètre fonctionnel
+# Phase 1 — MVP (actuelle)
+Module : Bibliothèque de Foi
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Affichage de versets bibliques
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Filtrage par catégorie :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Amour
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Paix
 
-## Learn More
+Force
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Données stockées dans un fichier JSON
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Rendu dynamique via React
 
-### Code Splitting
+Interface utilisateur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Design minimaliste et moderne
 
-### Analyzing the Bundle Size
+Responsive (mobile / desktop)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Layout en grille (type Pinterest)
 
-### Making a Progressive Web App
+Navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Routing avec React Router
 
-### Advanced Configuration
+Pages :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Home
 
-### Deployment
+Faith
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Phase 2 (prévisionnelle)
 
-### `npm run build` fails to minify
+Galerie photo narrative
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Intégration YouTube (iframe API)
+
+Section messages / poèmes
+
+# Phase 3 (prévisionnelle)
+
+Quiz interactif
+
+Générateur de contenu dynamique (verset du jour)
+
+## 1.4 Contraintes techniques
+
+Application 100% statique
+
+Hébergement : GitHub Pages
+
+Pas de backend
+
+Pas de base de données externe
+
+Données locales (JSON)
+
+## 1.5 Stack technique
+
+| Domaine     | Technologie   |
+| ----------- | ------------- |
+| Frontend    | React (Vite)  |
+| Routing     | React Router  |
+| Styling     | Tailwind CSS  |
+| Data        | JSON statique |
+| Versionning | Git / GitHub  |
+| Déploiement | GitHub Pages  |
+
+## 1.6 Architecture
+
+Architecture modulaire basée sur :
+
+séparation par features
+
+composants réutilisables
+
+logique découplée
+
+- Pattern utilisé :
+
+Feature-based architecture (inspiré clean architecture frontend)
+
+## 1.7 Critères de réussite
+
+Application fonctionnelle sans backend
+
+Code lisible et maintenable
+
+Structure évolutive
+
+UI fluide et responsive
+
+Déploiement accessible en ligne
+
+2. Documentation Technique — État Actuel (Phase 1)
+## 2.1 Structure du projet
+
+src/
+│
+├── components/
+│   ├── ui/
+│   └── layout/
+│
+├── features/
+│   └── faith/
+│       ├── components/
+│       ├── data/
+│       └── pages/
+│
+├── pages/
+├── router/
+├── App.jsx
+└── main.jsx
+
+## 2.2 Organisation par Feature
+
+Le projet suit une architecture feature-first :
+
+Exemple : faith/
+
+components/ → UI spécifique au module
+
+data/ → JSON local
+
+pages/ → page principale
+
+## 2.3 Gestion des données
+# Source
+    Fichier local : verses.json
+
+# Structure
+{
+  "id": number,
+  "text": string,
+  "reference": string,
+  "category": string
+}
+
+# Avantages
+- Simple
+- Rapide
+- Aucune dépendance externe
+- Idéal pour une app statique
+
+## 2.4 Flux de données
+JSON → import → state React → filtrage → rendu UI
+
+## 2.5 Routing
+Implémenté via React Router
+Routes actuelles : 
+/
+→ Home
+
+/faith
+→ FaithPage
+
+## 2.6 Gestion d'état
+- useState (local)
+- Pas encore de globale state (prévu Phase 2/3)
+
+## 2.7 UI / UX
+# Principes
+
+minimalisme
+
+lisibilité
+
+interaction simple
+
+# Composants clés
+
+- VerseCard
+- CategoryFilter
+
+# Layout 
+- Grid responsive
+- Boutons interactifs
+
+## 2.8 Performance
+Optimisations actuelles
+- pas d’API → zéro latence réseau
+- composants simples
+
+## 2.9 Déploiement
+# Processus
+  npm run build
+  npm run deploy
+
+# Hébergement
+  GitHub Pages
+
+## 2.10 Workflow Git
+# Branches
+  main
+  develop
+  feature/*
+
+# Process
+1. Création de feature branch
+2. Développement
+3. Pull Request
+4. Review
+5. Merge
+
