@@ -2,20 +2,28 @@ import { useState } from "react";
 import verses from "../data/verses.json";
 import VerseCard from "../components/VerseCard";
 import CategoryFilter from "../components/CategoryFilter";
+import Container from "../../../components/ui/Container";
 
 export default function FaithPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", ...new Set(verses.map(v => v.category))];
+  const categories = ["All", ...new Set(verses.map((verse) => verse.category))];
 
   const filteredVerses =
     selectedCategory === "All"
       ? verses
-      : verses.filter(v => v.category === selectedCategory);
+      : verses.filter((verse) => verse.category === selectedCategory);
 
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Bibliothèque de Foi ✨</h1>
+    <Container>
+      <section className="section-header">
+        <p className="eyebrow">Module · Bibliotheque de Foi</p>
+        <h1>Des versets pour l&apos;amour, la paix et la force</h1>
+        <p className="section-text">
+          Les donnees sont chargees depuis un JSON local, filtrees dans React,
+          puis affichees dans une grille responsive.
+        </p>
+      </section>
 
       <CategoryFilter
         categories={categories}
@@ -23,11 +31,11 @@ export default function FaithPage() {
         onSelect={setSelectedCategory}
       />
 
-      <div className="grid md:grid-cols-3 gap-4">
-        {filteredVerses.map(v => (
-          <VerseCard key={v.id} verse={v} />
+      <section className="verses-grid" aria-label="Liste des versets">
+        {filteredVerses.map((verse) => (
+          <VerseCard key={verse.id} verse={verse} />
         ))}
-      </div>
-    </div>
+      </section>
+    </Container>
   );
 }

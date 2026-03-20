@@ -178,3 +178,61 @@ pages/ → page principale
 
 ## 2.4 Flux de données
 JSON → import → state React → filtrage → rendu UI
+
+## 2.5 Routing
+Implémenté via React Router
+Routes actuelles : 
+/
+→ Home
+
+/faith
+→ FaithPage
+
+## 2.6 Gestion d'état
+- useState (local)
+- Pas encore de globale state (prévu Phase 2/3)
+
+## 2.7 UI / UX
+# Principes
+
+minimalisme
+
+lisibilité
+
+interaction simple
+
+# Composants clés
+
+- VerseCard
+- CategoryFilter
+
+# Layout 
+- Grid responsive
+- Boutons interactifs
+
+## 2.8 Performance
+Optimisations actuelles
+- pas d’API → zéro latence réseau
+- composants simples
+
+## 2.9 Déploiement
+# Processus
+  npm run build
+  npm run deploy
+
+# Hébergement
+  GitHub Pages
+
+## 2.10 Workflow Git
+# Branches
+  main
+  develop
+  feature/*
+
+# Process
+1. Création de feature branch
+2. Développement
+3. Pull Request
+4. Review
+5. Merge
+

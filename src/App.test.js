@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+jest.mock("./router/AppRouter", () => () => (
+  <div>EDEN, notre jardin digital</div>
+));
+
+test("renders the Eden home content", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/EDEN, notre jardin digital/i)).toBeInTheDocument();
 });
