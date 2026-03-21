@@ -1,0 +1,90 @@
+[
+  {
+    "id": "guy-1",
+    "persona": "guy",
+    "category": "Routine",
+    "difficulty": "Focus",
+    "question": "Quand il est absorbé dans l'architecture d'un projet comme UrbanHub, qu'est-ce qui lui parle le plus ?",
+    "scene": "Mode concentration active (Ubuntu 24.04).",
+    "options": [
+      {
+        "id": "b1-a",
+        "label": "Un soutien simple, calme et sans pression",
+        "isCorrect": true,
+        "insight": "Tu vises juste quand tu respectes son espace de réflexion technique."
+      },
+      {
+        "id": "b1-b",
+        "label": "Lui poser des questions sur chaque ligne de code",
+        "isCorrect": false,
+        "insight": "Attention, cela risque de couper son flux de pensée d'architecte !"
+      }
+    ]
+  },
+  {
+    "id": "girl-1",
+    "persona": "girl",
+    "category": "Routine",
+    "difficulty": "Doux",
+    "question": "Si elle a eu une grosse journée de cours en L3, quel geste a le plus de chances de lui faire du bien ?",
+    "scene": "Mode réconfort activé.",
+    "options": [
+      {
+        "id": "g1-a",
+        "label": "Lui laisser un peu de silence puis lui lire un verset d'encouragement",
+        "isCorrect": true,
+        "insight": "Tu captes son besoin de douceur et de reconnexion spirituelle avant tout."
+      },
+      {
+        "id": "g1-b",
+        "label": "Lancer immédiatement un débat sur Taylor Swift",
+        "isCorrect": false,
+        "insight": "Même les Swifties ont besoin d'un moment de calme après les cours !"
+      }
+    ]
+  },
+  {
+    "id": "guy-2",
+    "persona": "guy",
+    "category": "Passions",
+    "difficulty": "Expert",
+    "question": "Quel morceau pourrait tourner en boucle dans le casque de Manoa pour trouver l'inspiration ?",
+    "scene": "Session de build nocturne.",
+    "options": [
+      {
+        "id": "b2-a",
+        "label": "Un titre de RnBoi comme 'Mon Bébé'",
+        "isCorrect": true,
+        "insight": "C'est son rythme de référence, celui qui donne l'énergie à Eden."
+      },
+      {
+        "id": "b2-b",
+        "label": "Une compilation de Heavy Metal",
+        "isCorrect": false,
+        "insight": "Pas vraiment son style pour rester dans la 'Vibe' créative."
+      }
+    ]
+  },
+  {
+    "id": "girl-2",
+    "persona": "girl",
+    "category": "Spiritualité",
+    "difficulty": "Essentiel",
+    "question": "Quelle est la 'Bibliothèque de Foi' vers laquelle elle se tourne naturellement ?",
+    "scene": "Moment de prière personnel.",
+    "options": [
+      {
+        "id": "g2-a",
+        "label": "Les psaumes de force et de protection",
+        "isCorrect": true,
+        "insight": "Sa foi est son socle, et ces mots sont sa source d'énergie."
+      },
+      {
+        "id": "g2-b",
+        "label": "Des traités de philosophie pure",
+        "isCorrect": false,
+        "insight": "Elle préfère la profondeur et la vérité de la Parole."
+      }
+    ]
+  }
+]

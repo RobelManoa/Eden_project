@@ -35,6 +35,14 @@ export default function Navbar() {
           >
             Mots doux
           </NavLink>
+          <NavLink
+            to="/quiz"
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
+            Quiz
+          </NavLink>
         </nav>
       </Container>
     </header>
