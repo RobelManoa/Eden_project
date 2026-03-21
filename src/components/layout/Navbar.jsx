@@ -20,6 +20,14 @@ export default function Navbar() {
             Accueil
           </NavLink>
           <NavLink
+            to="/vision"
+            className={({ isActive }) =>
+              isActive ? "nav-link nav-link-active" : "nav-link"
+            }
+          >
+            Vision
+          </NavLink>
+          <NavLink
             to="/faith"
             className={({ isActive }) =>
               isActive ? "nav-link nav-link-active" : "nav-link"
