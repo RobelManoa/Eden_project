@@ -8,7 +8,7 @@ import VisionPage from "../pages/VisionPage";
 
 // Features modules
 import FaithPage from "../features/faith/pages/FaithPage";
-import NotesPage from "../features/love-notes/pages/NotesPage"; // Import du nouveau module
+import NotesPage from "../features/love-notes/pages/NotesPage";
 
 export default function AppRouter() {
   return (
@@ -22,8 +22,7 @@ export default function AppRouter() {
             <Route path="/vision" element={<VisionPage />} />
 
             <Route path="/faith" element={<FaithPage />} />
-            
-            <Route path="/notes" element={<NotesPage />} />
+            <Route path="/notes" element={<NotesPage />} /> 
           </Routes>
         </main>
         <Footer />

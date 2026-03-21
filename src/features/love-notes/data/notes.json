@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "text": "Aimer, c'est savoir dire je t'aime sans parler.",
+    "author": "Victor Hugo",
+    "category": "Poésie"
+  },
+  {
+    "id": 2,
+    "text": "La vie est une fleur, l'amour en est le miel.",
+    "author": "Victor Hugo",
+    "category": "Poésie"
+  },
+  {
+    "id": 3,
+    "text": "Le plus grand bonheur que puisse donner l'amour, c'est le premier serrement de main d'une femme qu'on aime.",
+    "author": "Victor Hugo",
+    "category": "Passion"
+  },
+  {
+    "id": 4,
+    "text": "Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la même direction.",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "Sagesse"
+  },
+  {
+    "id": 5,
+    "text": "On ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux.",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "Sagesse"
+  },
+  {
+    "id": 6,
+    "text": "C'est le temps que tu as perdu pour ta rose qui fait ta rose si importante.",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "Dévotion"
+  },
+  {
+    "id": 7,
+    "text": "De quoi que soient faites nos âmes, la mienne et la sienne sont pareilles.",
+    "author": "Emily Brontë",
+    "category": "Passion"
+  },
+  {
+    "id": 8,
+    "text": "Mon amour pour lui ressemble aux rochers éternels qui sont en dessous : une source de bonheur peu visible, mais nécessaire.",
+    "author": "Emily Brontë",
+    "category": "Fidélité"
+  },
+  {
+    "id": 9,
+    "text": "Si tout le reste périssait et que lui restât, je continuerais à être.",
+    "author": "Emily Brontë",
+    "category": "Passion"
+  },
+  {
+    "id": 10,
+    "text": "L'amour est une merveilleuse fleur, mais il faut avoir le courage d'aller la cueillir sur le bord d'un précipice affreux.",
+    "author": "Stendhal",
+    "category": "Force"
+  },
+  {
+    "id": 11,
+    "text": "Le plaisir d'aimer sans oser le dire a ses peines, mais il a ses douceurs.",
+    "author": "Stendhal",
+    "category": "Douceur"
+  },
+  {
+    "id": 12,
+    "text": "Dans l'isolement, on peut tout acquérir, sauf du caractère.",
+    "author": "Stendhal",
+    "category": "Caractère"
+  },
+  {
+    "id": 13,
+    "text": "Le cœur a ses raisons que la raison ne connaît point.",
+    "author": "Blaise Pascal",
+    "category": "Sagesse"
+  },
+  {
+    "id": 14,
+    "text": "Il n'y a qu'un remède à l'amour : aimer davantage.",
+    "author": "Henry David Thoreau",
+    "category": "Persévérance"
+  },
+  {
+    "id": 15,
+    "text": "Aimer, c'est trouver sa propre richesse hors de soi.",
+    "author": "Alain",
+    "category": "Générosité"
+  }
+]
