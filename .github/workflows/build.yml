@@ -1,19 +1,60 @@
-name: Build
+name: Build CI/CD Pipeline - EDEN
+
 on:
   push:
-    branches:
-      - master
+    branches: [ master, develop ]
   pull_request:
     types: [opened, synchronize, reopened]
+
 jobs:
-  sonarqube:
-    name: SonarQube
+  quality-check:
+    name: Quality & Security
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 1. Vérification du style (ESLint)
+      - name: Linter Check
+        run: npm run lint
+
+      # 2. Sécurité des dépendances (Snyk)
+      - name: Snyk Security Scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
+      # 3. Ton scan SonarQube existant
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+  build-and-test:
+    name: Build Verification
+    runs-on: ubuntu-latest
+    needs: quality-check # On ne build que si la qualité est OK
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build Project
+        run: npm run build
