@@ -5,44 +5,44 @@ export default function Home() {
   return (
     <Container className="hero-section">
       <div className="hero-copy">
-        <p className="eyebrow">Phase 1 · MVP</p>
-        <h1>EDEN, notre jardin digital</h1>
+        <p className="eyebrow">Bienvenue dans notre jardin</p>
+        <h1>EDEN</h1>
         <p className="hero-text">
-          Une application React statique pour rassembler des versets inspires,
-          avec une interface claire, douce et evolutive.
+          L'espace où nos pensées, notre foi et nos souvenirs se rejoignent. 
+          Un sanctuaire numérique conçu pour nous, un commit à la fois.
         </p>
         <div className="hero-actions">
           <Link to="/faith" className="button button-primary">
-            Ouvrir la bibliotheque de foi
+            Parcourir la Parole
           </Link>
-          <a href="#vision" className="button button-secondary">
-            Voir la vision du projet
-          </a>
+          <Link to="/vision" className="button button-secondary">
+            L'origine du projet
+          </Link>
         </div>
       </div>
 
-      <section id="vision" className="home-panels" aria-label="Vision du projet">
+      <section className="home-panels" aria-label="Nos espaces">
         <article className="panel">
-          <h2>Contenu centralise</h2>
+          <h2>La Source</h2>
           <p>
-            Le MVP met en avant les versets bibliques, avec une base solide pour
-            accueillir ensuite galerie, poesie et contenus multimedia.
+            Retrouve les versets qui nous fortifient et nous guident 
+            chaque jour dans nos projets et notre marche.
           </p>
         </article>
 
         <article className="panel">
-          <h2>Architecture evolutive</h2>
+          <h2>L'Inspiration</h2>
           <p>
-            L&apos;application est organisee par features pour permettre une
-            croissance propre, maintenable et agreable a faire evoluer.
+            Une collection de mots doux et de poésie pour se rappeler 
+            la beauté de ce que nous construisons ensemble.
           </p>
         </article>
 
         <article className="panel">
-          <h2>Experience responsive</h2>
+          <h2>Le Futur</h2>
           <p>
-            L&apos;interface s&apos;adapte au mobile comme au desktop avec un
-            premier affichage plus intentionnel que la page React par defaut.
+            Bientôt nos musiques, nos photos et nos jeux pour faire 
+            grandir ce jardin à notre image.
           </p>
         </article>
       </section>

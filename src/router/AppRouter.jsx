@@ -1,8 +1,14 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
+
+// Pages de base
 import Home from "../pages/Home";
+import VisionPage from "../pages/VisionPage";
+
+// Features modules
 import FaithPage from "../features/faith/pages/FaithPage";
+import NotesPage from "../features/love-notes/pages/NotesPage"; // Import du nouveau module
 
 export default function AppRouter() {
   return (
@@ -12,7 +18,12 @@ export default function AppRouter() {
         <main className="app-main">
           <Routes>
             <Route path="/" element={<Home />} />
+            
+            <Route path="/vision" element={<VisionPage />} />
+
             <Route path="/faith" element={<FaithPage />} />
+            
+            <Route path="/notes" element={<NotesPage />} />
           </Routes>
         </main>
         <Footer />
